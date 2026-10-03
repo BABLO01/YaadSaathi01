@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f9d92">
+  <meta name="description" content="Yaad Saathi — a calm, private place for the things you want to remember.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Yaad Saathi">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Yaad Saathi · یاد ساتھی</title>
+</head>
+<body>
+  <div id="boot-splash" class="boot-splash" aria-label="Yaad Saathi loading"><div class="boot-orbit"></div><div class="boot-card"><div class="boot-logo"><span>✦</span></div><div class="boot-title">YAAD SAATHI</div><div class="boot-urdu">یاد ساتھی</div><div class="boot-name">محمد عثمان</div><div class="boot-about">A calm place for the things, moments and reminders that matter.</div><div class="boot-line"><span></span></div></div></div>
+  <div id="app" aria-live="polite"></div>
+  <div id="toast" class="toast" role="status"></div>
+  <script>if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}))}</script><script src="./app.js" defer></script>
+<script>(()=>{const s=document.getElementById("boot-splash");if(!s)return;if(sessionStorage.getItem("yaadSaathiBootSeen")){s.remove();return}sessionStorage.setItem("yaadSaathiBootSeen","1");setTimeout(()=>{s.classList.add("is-done");setTimeout(()=>s.remove(),520)},1750)})();</script>
+</body>
+</html>
